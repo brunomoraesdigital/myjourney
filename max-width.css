@@ -38,6 +38,30 @@
         align-items: center;
         padding-bottom: 0.5rem;
     }
+    h2 {
+        font-family: 'Lato', sans-serif;
+        color: #333; 
+        font-weight: 700;   
+        font-size: 1.5rem;
+    }
+    h3 {
+        font-weight: bold;
+        font-size: 1rem;
+        color: #fff;
+        border-bottom: 0.05rem groove #fff; 
+        padding-bottom: 0.5rem; 
+    }
+    p {
+        font-family: 'Lato', sans-serif;
+        letter-spacing: 0.1rem; 
+        font-size: 0.8rem;
+        padding: 0.2rem 0.5rem;
+        font-weight: bold;
+        text-align: justify;
+        color: #fff;
+        line-height: 1.3;
+        margin-bottom: 0.3rem;
+      }
     .section-content {
         width: 90%;
         border: 1px solid #cdcdcd; 
@@ -78,9 +102,8 @@
     }
     
     li {
-        width: 95%;
-        flex-basis: 15%;
-        cursor: pointer;
+        width: 98%;
+        flex-basis: 18%;
         border: 1px solid #cdcdcd; 
         background-color: #f9f9fb;
         border-radius: 0.5rem; 
@@ -88,14 +111,29 @@
         display: flex;
         align-items: center;
         text-indent: 1rem; 
-        position: relative;
         z-index: 1;
         transition: background-color .2s ease-out, border .2s ease-out;
     }
+    li:hover {
+        border-radius: 0.5rem;
+        background-color: #add8e6;
+        border: 1px solid skyblue;
+    }
+ 
     button {
         width: 100%;
         height: 100%;
+        cursor: pointer;
+        position: relative;
+        background-color: transparent;
     }
+
+    .selecionado {
+        background-color: #87ceeb;
+        border: 2px solid #1e90ff;
+        border-radius: 0.5rem;
+    }
+
     #default-example {
         height: 600px;
         width: 70%;
@@ -166,8 +204,6 @@
   }
   
   /* Estilos comuns para a classe 'selecionado' */
-  .selecionado {
-    background-color: red;
-  }
+
 
 }

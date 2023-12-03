@@ -100,7 +100,6 @@
     li {
         width: 98%;
         flex-basis: 18%;
-        cursor: pointer;
         border: 1px solid #cdcdcd; 
         background-color: #f9f9fb;
         border-radius: 0.5rem; 
@@ -110,19 +109,21 @@
         text-indent: 1rem; 
         z-index: 1;
         transition: background-color .2s ease-out, border .2s ease-out;
-        overflow: hidden;
     }
+    li:hover {
+        border-radius: 0.5rem;
+        background-color: #add8e6;
+        border: 1px solid skyblue;
+    }
+ 
     button {
         width: 100%;
         height: 100%;
+        cursor: pointer;
+        position: relative;
+        background-color: transparent;
     }
-    li:hover {
-        border: 4px solid #dcdcdc;
-    }
-    li:active {
-        border: 4px solid #87ceeb;
-    }
-    li::before {
+    button::before {
         content: "►";
         color: #cdcdcd;
         opacity: 0;
@@ -133,16 +134,28 @@
         transition: all .2s ease-out;
         z-index: 2;
     }
-    li:hover::before {
+    button:hover::before {
         transform: translateY(-50%) translateX(5px); /* Desloca para a direita ao passar o mouse */
-        color: #dcdcdc;
+        color: #add8e6;
         opacity: 1;
     }
+
     
-    li:active::before {
-        transform: translateY(-50%) translateX(10px); /* Desloca para a esquerda ao clicar */
-        color: #87ceeb;
+    .selecionado {
+        background-color: #87ceeb;
+        border: 2px solid #1e90ff;
+        border-radius: 0.5rem;
+    }
+    .selecionado::before {
+        content: "►";
+        color: #1e90ff;
         opacity: 1;
+        position: absolute;
+        right: -20px;
+        top: 50%;
+        transform: translateY(-50%) translateX(0); /* Adicione a transição horizontal */
+        transition: all .2s ease-out;
+        z-index: 2;
     }
     .output {
         overflow: auto;
@@ -209,8 +222,6 @@
   }
   
   /* Estilos comuns para a classe 'selecionado' */
-  .selecionado {
-    background-color: red;
-  }
+
 }
 
