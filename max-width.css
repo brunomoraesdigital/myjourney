@@ -99,8 +99,8 @@
     #example-element {
         max-width: 30rem;
         height: 100%;
-        background: url('https://raw.githubusercontent.com/brunomoraesdigital/ressources/main/bruno-bm-folio.png') center 5% no-repeat,
-                    url('https://github.com/brunomoraesdigital/ressources/raw/main/programer%20girl%20anime.png') center no-repeat;    
+        background-image: url('https://raw.githubusercontent.com/brunomoraesdigital/ressources/main/bruno-bm-folio.png'),
+                          url('https://github.com/brunomoraesdigital/ressources/raw/main/programer%20girl%20anime.png');    
         color: #fff;
         font-size: 1.5em;
         font-weight: 700;
@@ -126,6 +126,49 @@
             background-color: darkgray;
         }
     }
-
+/* Estilos para a classe 'fixed' */
+.fixed {
+    /*  */
+    background-attachment: fixed;
+    background-position: 80% 65%;
+    background-repeat: no-repeat;
+    background-size: 210px, cover;
+  }
+  
+  .scroll {
+    /*  */
+    background-attachment: scroll;
+    background-position: 30% 16%;
+    background-repeat: no-repeat;
+    background-size: 100%, cover;
+  }
+  
+  .local {
+    /*  */
+    background-attachment: local;
+    background-position: 50% 1.8%;
+    background-repeat: no-repeat;
+    background-size: 100%, cover;
+  }
+  
+  .local-scroll {
+    /*  */
+    background-attachment: local, scroll;
+    background-position: 50% 1.8%;
+    background-repeat: no-repeat;
+    background-size: 100%, cover;
+  }
+  
+  .scroll-local {
+    /*  */
+    background-attachment: scroll, local;
+    background-position: 30% 16%;
+    background-repeat: no-repeat;
+    background-size: 100%, cover;
+  }
+  
+  /* Estilos comuns para a classe 'selecionado' */
+  .selecionado {
+  }
 
 }
