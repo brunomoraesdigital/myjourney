@@ -57,11 +57,16 @@
   .hero .sec-a {
     height: 100%;
     position: relative;
-    z-index: 3;
+    z-index: 1;
   }
-  
-  .hero .sec-a::after,
-  .hero .sec-a::before {
+
+  .sec-b {
+    position: relative;
+    z-index: 1;
+  }
+
+  .sec-a::before,
+  .sec-b::before {
     content: "";
     position: absolute;
     top: 0;
@@ -69,36 +74,43 @@
     width: 100%;
     height: 100%;
   }
-  
-  .hero .sec-a::before {
+
+  .hero .sec-a {
     background-image: url('../images/mesa-trabalho.jpg');
-    z-index: -1;
-  }
-  
-  .hero .sec-a::after {
-    background: linear-gradient(45deg, rgba(255, 255, 0, 0.5), rgba(255, 0, 0, 0.5));
-    z-index: -1;
   }
 
   .introduction .sec-b {
     background-image: url("../images/creativity.jpeg");
   }
 
-  innovation {
+  .mission .sec-b {
     background-image: url("../images/innovation.jpeg");
   }
 
-  collaborative {
-    background-image: url("../images/collaborative.jpeg")
+  .about .sec-b {
+    background-image: url("../images/collaborative.jpeg");
   }
 
-  contact {
-    background-image: url("../images/mapinha.jpeg")
+  .contact .sec-b {
+    background-image: url("../images/mapinha.jpeg");
   }
-  
+
   .bg-sec {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
+  }
+
+  .hero .sec-a::before {
+    background: linear-gradient(45deg, rgba(255, 255, 0, 0.5), rgba(255, 0, 0, 0.5));
+    z-index: -1;
+  }
+
+  .sec-b::before {
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0.3), rgba(187, 187, 187, 0.3));
+    z-index: -1;
+  }
+  .ops { 
+    text-indent: 2rem;
   }
