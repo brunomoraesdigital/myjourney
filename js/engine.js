@@ -84,7 +84,7 @@ usFlag.addEventListener('click', switchToUs);
 navIcon.addEventListener('click', toggleClassesNav);
 navClose.addEventListener('click', removeClassesNav);
 
-/*
+/************************************/
 document.addEventListener("DOMContentLoaded", function () {
   // Passo 1: Identificar as seções
   const sections = ["hero", "introduction", "mission", "professional", "about", "contact"];
@@ -140,4 +140,4 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     });
   });
-});*/
+});
