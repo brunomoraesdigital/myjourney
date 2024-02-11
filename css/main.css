@@ -41,7 +41,7 @@
   }
 
   .sec-b {
-    background-color: lightgrey;
+    border: 1px solid red;
   }
 
   .hide {
@@ -80,7 +80,7 @@
     z-index: -1;
   }
 
-  creativity {
+  .introduction .sec-b {
     background-image: url("../images/creativity.jpeg");
   }
 
