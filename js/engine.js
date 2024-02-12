@@ -181,3 +181,14 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   }
 });
+
+/***************************/
+// vel vídeo
+/***************************/
+
+  document.addEventListener('DOMContentLoaded', function () {
+    var video = document.querySelector('.sec-b.bg-sec.video-container video');
+    if (video) {
+      video.playbackRate = 0.75; // Defina o valor desejado (0.75 reduz a velocidade em 25%)
+    }
+  });
