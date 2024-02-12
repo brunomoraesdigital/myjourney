@@ -1,26 +1,26 @@
-
 // footer
 
 const anoAtualElement = document.getElementById("ano-atual");
 const anoAtual = new Date().getFullYear();
 anoAtualElement.textContent = `Copyright ©
-${anoAtual} Bruno Moraes`;   
+${anoAtual} Bruno Moraes`;
 var botoes = document.getElementsByClassName('botao');
 var exemploElemento = document.getElementById('example-element');
+
 function clique() {
-    var valorBackgroundAttachment = this.innerText.toLowerCase().trim();
-    for (var i = 0; i < botoes.length; i++) {
-        botoes[i].classList.remove('selecionado');
-    }
-    this.classList.add('selecionado');
-    exemploElemento.className = valorBackgroundAttachment
-        .replace('background-attachment: ', '')
-        .replace(/;/g, '')
-        .replace(/, /g, '-');
+  var valorBackgroundAttachment = this.innerText.toLowerCase().trim();
+  for (var i = 0; i < botoes.length; i++) {
+    botoes[i].classList.remove('selecionado');
+  }
+  this.classList.add('selecionado');
+  exemploElemento.className = valorBackgroundAttachment
+    .replace('background-attachment: ', '')
+    .replace(/;/g, '')
+    .replace(/, /g, '-');
 }
 
 for (var i = 0; i < botoes.length; i++) {
-    botoes[i].addEventListener('click', clique);
+  botoes[i].addEventListener('click', clique);
 }
 
 
@@ -85,59 +85,60 @@ navIcon.addEventListener('click', toggleClassesNav);
 navClose.addEventListener('click', removeClassesNav);
 
 /************************************/
-document.addEventListener("DOMContentLoaded", function () {
-  // Passo 1: Identificar as seções
-  const sections = ["hero", "introduction", "mission", "professional", "about", "contact"];
-  
-  // Passo 2: Obter referências para os elementos <li>
+/*
+document.addEventListener("DOMContentLoaded", function() {
+  // Seleciona todos os itens do menu
   const navItems = document.querySelectorAll("#nav-list ul li");
 
-  // Passo 3: Adicionar um Event Listener de Rolagem
-  window.addEventListener("scroll", function () {
-    // Obter a posição atual de rolagem
-    const currentPosition = window.scrollY;
-    let currentSection = "";
+  // Adiciona um ouvinte de evento de clique para cada item do menu
+  for (let i = 0; i < navItems.length; i++) {
+    navItems[i].addEventListener("click", function() {
+      // Reseta a classe "active" de todos os itens
+      resetActiveClass();
 
-    // Passo 4: Iterar sobre as seções para determinar a seção atual
-    for (const sectionId of sections) {
-      const sectionElement = document.getElementById(sectionId);
-      const sectionRect = sectionElement.getBoundingClientRect();
+      // Adiciona a classe "active" ao item clicado
+      this.classList.add("active");
 
-      // Verificar se a seção está pelo menos 50% visível na tela
-      if (sectionRect.top <= window.innerHeight / 2 && sectionRect.bottom >= window.innerHeight / 2) {
-        currentSection = sectionId;
-        break;
-      }
-    }
-
-    // Se nenhuma seção estiver no topo, verifica se está no final da página
-    if (!currentSection && currentPosition + window.innerHeight >= document.body.offsetHeight) {
-      currentSection = sections[sections.length - 1];
-    }
-
-    // Atualizar classes dos itens de navegação
-    navItems.forEach((item) => {
-      const sectionId = item.querySelector("a").getAttribute("href").substring(1);
-      item.classList.toggle("active", sectionId === currentSection);
+      // Exibe a nova classe "active" no console
+      //console.log(`New active class:`, this.classList);
     });
-    // Passo 5: Adicionar classe ao "nav-icon" quando a seção "hero" não estiver visível
-    const heroSection = document.getElementById("hero");
-    const heroRect = heroSection.getBoundingClientRect();
-    navIcon.classList.toggle("nav-icon-background", heroRect.bottom <= 0);
-  });
+  }
 
-  // Passo 6: Adicionar Event Listener de Clique para Atualizar Ativo ao Clicar nas Seções
-  navItems.forEach((item) => {
-    item.addEventListener("click", function (event) {
-      event.preventDefault();
-      const sectionId = item.querySelector("a").getAttribute("href").substring(1);
-      const sectionElement = document.getElementById(sectionId);
-      
-      // Rolagem suave para a seção clicada
-      window.scrollTo({
-        top: sectionElement.offsetTop,
-        behavior: "smooth",
-      });
-    });
-  });
+  // Função para resetar a classe "active" de todos os itens do menu
+  function resetActiveClass() {
+    for (let i = 0; i < navItems.length; i++) {
+      navItems[i].classList.remove("active");
+    }
+  }
 });
+*/
+
+document.addEventListener("DOMContentLoaded", function() {
+  // Seleciona todos os itens do menu
+  const navItems = document.querySelectorAll("#nav-list ul li");
+
+  // Adiciona um ouvinte de evento de clique para cada item do menu
+  for (let i = 0; i < navItems.length; i++) {
+    navItems[i].addEventListener("click", function() {
+      // Chama a função para lidar com o clique
+      handleMenuItemClick(i);
+    });
+  }
+
+  // Função para lidar com o clique nos itens do menu
+  function handleMenuItemClick(index) {
+    // Reseta a classe "active" de todos os itens
+    resetActiveClass();
+
+    // Adiciona a classe "active" ao item clicado
+    navItems[index].classList.add("active");
+  }
+
+  // Função para resetar a classe "active" de todos os itens do menu
+  function resetActiveClass() {
+    for (let i = 0; i < navItems.length; i++) {
+      navItems[i].classList.remove("active");
+    }
+  }
+});
+
