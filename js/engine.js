@@ -191,4 +191,4 @@ document.addEventListener("DOMContentLoaded", function() {
     if (video) {
       video.playbackRate = 0.75; // Defina o valor desejado (0.75 reduz a velocidade em 25%)
     }
-  });
+  }); 
