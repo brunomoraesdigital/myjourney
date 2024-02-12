@@ -23,7 +23,7 @@ for (var i = 0; i < botoes.length; i++) {
   botoes[i].addEventListener('click', clique);
 }
 
-
+// lang
 
 // Selecionando elementos do DOM
 let navIcon = document.getElementById('nav-icon');
