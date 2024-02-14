@@ -15,7 +15,7 @@
   .content {
     width: 100%;
     height: 100%;
-
+    overflow-x: hidden;
     position: fixed;
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
@@ -189,7 +189,8 @@
 
   .ops {
     border-top: 1px groove #a3a3a3;
-    text-indent: 2rem;
+    padding: 1rem 0;
+    margin: 0 auto;
   }
 
   .box-form-contact {
