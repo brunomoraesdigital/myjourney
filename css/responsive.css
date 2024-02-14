@@ -78,7 +78,9 @@
   li {
     padding: 5px 0 3px 10px;
   }
-
+  hr {
+    width: 30%;
+  }
   /**/
 
   .move-nav-icon {
