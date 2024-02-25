@@ -107,23 +107,26 @@
 
 @media only screen and (max-height: 450px) {
  .sec-c .socials {
-    font-size: 0.6rem;
+    font-size: 0.7rem;
     color: red;
   }
   .sec-c .copy {
-    font-size: 0.6rem;
+    font-size: 0.7rem;
     letter-spacing: 0.05rem;
     color: red;
   }
+     .sec-b .box-form-contact {
+     height: 250px;
+   }
 }
 
 @media only screen and (max-height: 320) {
   .sec-c .socials {
-     font-size: 0.5rem;
+     font-size: 0.6rem;
      color: red;
    }
    .sec-c .copy {
-     font-size: 0.4rem;
+     font-size: 0.5rem;
      letter-spacing: 0.05rem;
      color: red;
    }
