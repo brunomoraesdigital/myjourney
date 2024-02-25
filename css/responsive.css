@@ -105,6 +105,26 @@
 
 
 
-@media only screen and (min-width: 600px) {}
+@media only screen and (max-height: 450px) {
+ .sec-c .socials {
+    font-size: 0.6rem;
+    color: red;
+  }
+  .sec-c .copy {
+    font-size: 0.6rem;
+    letter-spacing: 0.05rem;
+    color: red;
+  }
+}
 
-@media only screen and (min-width: 768px) {}
+@media only screen and (max-height: 320) {
+  .sec-c .socials {
+     font-size: 0.5rem;
+     color: red;
+   }
+   .sec-c .copy {
+     font-size: 0.4rem;
+     letter-spacing: 0.05rem;
+     color: red;
+   }
+ }
