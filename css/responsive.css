@@ -116,114 +116,27 @@
    }
 }
 
-@media only screen and (min-height: 451px) and (max-height: 550px) {
-  .contact .sec-a,
-  .contact .sec-b {
-    height: 85%;
+@media only screen and (max-height: 450px) {
+ .sec-c .socials {
+    font-size: 0.6rem;
+    color: red;
   }
-  .contact .sec-c {
-    height: 15%;
+  .sec-c .copy {
+    font-size: 0.6rem;
+    letter-spacing: 0.05rem;
+    color: red;
   }
-  .sec-b .box-form-contact {
-    height: fit-content;
-   }
-}
-@media only screen and (min-height: 320px) and (max-height: 450px) {
-  .contact .sec-a,
-  .contact .sec-b {
-    height: 85%;
-  }
-  .contact .sec-c {
-    height: 15%;
-  }
-  .sec-b .box-form-contact {
-    height: 90%;
-   }
 }
 
-@media only screen and (min-height: 151px) and (max-height: 319px) {
-  .contact .sec-a,
-  .contact .sec-b {
-    height: 80%;
-  }
-  .contact .sec-c {
-    flex-direction: row;
-    height: 20%;
-  }
-  .contact .sec-c .copy {
-    margin-top: 0;
-    position: relative;
-  }
-  .sec-b {
-    overflow: hidden;
-  }
-  .sec-b .box-form-contact {
-    height: 70%;
+@media only screen and (max-height: 320) {
+  .sec-c .socials {
+     font-size: 0.5rem;
+     color: red;
    }
-
-   .box-form-contact form {
-    flex-direction: row;
-    flex-wrap: wrap;
-   }
-   label:nth-child(1),
-   label:nth-child(3) {
-    width: 10%;
-   }
-   input:nth-child(2),
-   input:nth-child(4) {
-    width: 40%;
-   }
-   label:nth-child(5) {
-    width: 15%;
-   }
-   textarea {
-    width: 70%;
-   }
-   button {
-   flex: 1;
-    margin-left: 1rem;
-   }
-}
-@media only screen and (max-height: 150px) {
-  .contact .sec-a,
-  .contact .sec-b {
-    height: 80%;
-  }
-  .contact .sec-c {
-    flex-direction: row;
-    height: 20%;
-  }
-  .contact .sec-c .copy {
-    margin-top: 0;
-    position: relative;
-  }
-  .sec-b {
-    overflow: hidden;
-  }
-  .sec-b .box-form-contact {
-    height: 90%;
-   }
-   .box-form-contact form {
-    flex-direction: row;
-    flex-wrap: wrap;
-   }
-   label:nth-child(1),
-   label:nth-child(3) {
-    width: 10%;
-   }
-   input:nth-child(2),
-   input:nth-child(4) {
-    width: 40%;
-   }
-   label:nth-child(5) {
-    width: 15%;
-   }
-   textarea {
-    width: 70%;
-   }
-   button {
-   flex: 1;
-    margin-left: 1rem;
+   .sec-c .copy {
+     font-size: 0.4rem;
+     letter-spacing: 0.05rem;
+     color: red;
    }
 }
 
