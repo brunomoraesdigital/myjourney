@@ -44,10 +44,13 @@
 
   .sec-c {
     height: 10%;
+    width: 100%;
     background-color: #333;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    
   }
 
   .hide {
@@ -346,3 +349,35 @@
     background: linear-gradient(45deg, rgba(255, 255, 255, 0.3), rgba(187, 187, 187, 0.3));
     z-index: 3;
   }
+  
+  
+  
+.copy {
+  margin-top: .375rem;
+  font-size: .7rem;
+}
+.socials {
+  font-size: .8rem;
+  width: 11.25rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+.socials a {font-weight: normal;}
+.socials a:link {color: #f2f2f2;}
+.socials a:visited {color: #f2f2f2;}
+.socials a:active {color: rebeccapurple;}
+
+.socials .fa-linkedin-in:hover {color: #007bb5;}
+.socials .fa-github:hover {color: black; position: relative; display: flex; align-items: center; justify-content: center;}
+.socials .fa-github:hover::before {z-index: 2;}
+.socials .fa-github:hover::after {content: ""; position: absolute; width: 90%; height:90%; border-radius: 50%; background-color: white;}
+.socials .fa-tiktok:hover {text-shadow: 0.0625rem 0.0625rem 0.125rem magenta, -0.0625rem -0.0625rem 0.125rem cyan; color: black;}
+.socials .fa-youtube:hover { color: #bb0000; position: relative; display: flex; align-items: center; justify-content: center;}
+.socials .fa-youtube:hover::before {z-index: 2;}
+.socials .fa-youtube:hover::after {content: ""; position: absolute; width: 60%; height:60%; border-radius: 50%; background-color: white;}
+.socials .fa-dribbble:hover {color: #ea4c89; position: relative; display: flex; align-items: center; justify-content: center;}
+.socials .fa-dribbble:hover::before {z-index: 2;}
+.socials .fa-dribbble:hover::after {content: ""; position: absolute; width: 80%; height:80%; border-radius: 50%; background-color: lightpink;}
+.socials .fa-x-twitter:hover {color: #55ACEE;}
+.socials .fa-behance:hover {color: #0057ff;}
+.socials .fa-pinterest-p:hover {color: #bb0000;}
