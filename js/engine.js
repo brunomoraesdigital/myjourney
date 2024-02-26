@@ -122,6 +122,7 @@ document.addEventListener("DOMContentLoaded", function() {
 document.addEventListener("DOMContentLoaded", function() {
   // Adiciona um ouvinte de evento de rolagem para a janela
   document.addEventListener("scroll", debounce(handleScroll, 300));
+  document.addEventListener("wheel", debounce(handleScroll, 300));
   document.addEventListener("touchmove", debounce(handleScroll, 300));
 
   // Chama handleScroll para mostrar a seção atual ao carregar a página
