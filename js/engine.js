@@ -144,6 +144,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const navIcon = document.getElementById("nav-icon");
     if (closestSection.id !== "hero") {
       navIcon.classList.add("nav-icon-background");
+      console.log("nav-icon-background class added");
     } else {
       navIcon.classList.remove("nav-icon-background");
     }
