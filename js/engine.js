@@ -106,6 +106,17 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Adiciona a classe "active" ao item clicado
     navItems[index].classList.add("active");
+
+    // Adiciona ou remove a classe "nav-icon-background" com base no item clicado
+    const sectionId = navItems[index].querySelector("a").getAttribute("href").substring(1);
+    const navIcon = document.getElementById("nav-icon");
+
+    if (sectionId !== "hero") {
+      navIcon.classList.add("nav-icon-background");
+    } else {
+      navIcon.classList.remove("nav-icon-background");
+    }
+
   }
 
   // Função para resetar a classe "active" de todos os itens do menu

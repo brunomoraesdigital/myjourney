@@ -50,7 +50,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
+    z-index: 5;
   }
 
   .hide {
@@ -360,7 +360,7 @@
   display: flex;
   justify-content: space-evenly;
 }
-.socials a {font-weight: normal;}
+.socials a {font-weight: normal; cursor: pointer;}
 .socials a:link {color: #f2f2f2;}
 .socials a:visited {color: #f2f2f2;}
 .socials a:active {color: rebeccapurple;}
