@@ -22,7 +22,7 @@ A My Journey - Landing Page é organizada em seções que abrangem diferentes as
 - **Profissional:** Detalhamento objetivo de competências e experiências.
 - **Sobre Mim:** Informações pessoais, motivações e valores.
 - **Contato:** Formulário para facilitar a comunicação e colaboração.
-- **Navegação** A navegação na página é intuitiva e permite acesso rápido às seções.
+- **Navegação:** Links intuitivos que permitem acesso rápido às seções.
 
 ## Recursos
 
