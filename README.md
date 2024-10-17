@@ -26,16 +26,22 @@ A My Journey - Landing Page é organizada em seções que abrangem diferentes as
 
 ## Recursos
 
-- **Mudar o idioma:** A opção do usuário alternar os textos visíveis entre inglês e português do Brasil. 
-- **Travar as seções:** As seções "colam" na parte superior da janela ao serem roladas, garantindo que apenas uma seção esteja visível por vez.
-- **Navegação:** Links diretos para cada seção da página.
-- **Compatibilidade**: Projetada para ser responsivo.
+- A opção do usuário alternar os textos visíveis entre inglês e português do Brasil. 
+- As seções "colam" na parte superior da janela ao serem roladas, garantindo que apenas uma seção esteja visível por vez.
+- Links diretos para cada seção da página.
+- Responsividade.
 
 ## Problemas Observados a Serem Resolvidos
 
 - [ ] Ao clicar nos links da seção navegação a página não rola de forma suave.
+- [ ] Outras forms de navegação não rolam a página suave, isso inclui scroll do mouse, setas cima e baixo do teclado, e barra de espaço.
   
 ## Instalação
+Clone o repositório e abra o arquivo HTML no seu navegador:
+
+```bash
+git clone https://github.com/brunomoraesdigital/myjourney.git
+```
 
 ## Licença
 
