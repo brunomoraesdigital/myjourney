@@ -1,6 +1,6 @@
 # My Journey - Landing Page
 
-Esta é uma landing page desenvolvida por mim, como parte do meu aprendizado em desenvolvimento web. 
+Esta é uma landing page desenvolvida por mim, como parte do meu aprendizado em desenvolvimento web. Uma página com design de revista, destacando habilidades, projetos e experiências de forma visual e direta. 
 
 <a href="https://brunomoraesdigital.github.io/myjourney/" target="_blank" rel="noopener noreferrer">Ver Demonstração</a>
 
@@ -14,7 +14,7 @@ A landing page **My Journey** foi criada com o intuito de:
 
 ## Estrutura da Página
 
-A My Journey - Landing Page é organizada em seções que abrangem diferentes aspectos da jornada:
+A My Journey - Landing Page é organizada em seções que abrangem diferentes aspectos para apresentar um profissional! 
 
 - **Home:** Introdução geral da página e seus objetivos.
 - **Apresentação:** Breve descrição sobre a trajetória e evolução profissional.
