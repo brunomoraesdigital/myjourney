@@ -35,13 +35,6 @@ A My Journey - Landing Page é organizada em seções que abrangem diferentes as
 
 - [ ] Ao clicar nos links da seção navegação a página não rola de forma suave.
 - [ ] Outras forms de navegação não rolam a página suave, isso inclui scroll do mouse, setas cima e baixo do teclado, e barra de espaço.
-  
-## Instalação
-Clone o repositório e abra o arquivo HTML no seu navegador:
-
-```bash
-git clone https://github.com/brunomoraesdigital/myjourney.git
-```
 
 ## Licença
 
