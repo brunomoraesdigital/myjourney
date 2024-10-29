@@ -19,12 +19,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
 </head> 
 
 <body>
-  <div class="content">
+  <main class="content">
     <nav id="navigation" class="navigation">
       <!-- icon bars -->
       <div id="nav-icon" class="nav-icon">
@@ -78,8 +78,8 @@
         <img id="us-flag" class="hide" src="images/flag-us.png" alt="">
       </div>
     </nav>
-    <div id="hero" class="sec hero">
-      <div class="sec-a bg-sec">
+    <section id="hero" class="sec hero">
+      <header class="sec-a bg-sec">
         <h1>
           <span class="us-text show">TREADING THE PATH OF LEARNING</span>
           <span class="br-text hide">TRILHANDO O CAMINHO DA APRENDIZAGEM</span>
@@ -91,9 +91,9 @@
           <span class="br-text hide">Explore minha jornada pessoal, onde cada desafio se torna uma oportunidade de crescimento.
           </span>
         </p>
-      </div>
-    </div>
-    <div id="introduction" class="sec introduction">
+      </header>
+    </section>
+    <section id="introduction" class="sec introduction">
       <div class="sec-a">
         <h2>
           <span class="us-text show">INTRODUCTION</span>
@@ -113,8 +113,8 @@
           <span class="br-text hide">Criatividade</span>
         </h3>
       </div>
-    </div>
-    <div id="mission" class="sec mission">
+    </section>
+    <section id="mission" class="sec mission">
       <div class="sec-a">
         <h2>
           <span class="us-text show">MISSION</span>
@@ -134,8 +134,8 @@
           <span class="br-text hide">Inovação</span>
         </h3>
       </div>
-    </div>
-    <div id="professional" class="sec professional">
+    </section>
+    <section id="professional" class="sec professional">
       <div class="sec-a">
         <h2>
           <span class="us-text show">DIGITAL PROFESSIONAL</span>
@@ -159,8 +159,8 @@
           <span class="br-text hide">Multidisciplinar</span>
         </h3>
       </div>
-    </div>
-    <div id="about" class="sec about">
+    </section>
+    <section id="about" class="sec about">
       <div class="sec-a">
         <h2>
           <span class="us-text show">ABOUT ME</span>
@@ -180,8 +180,8 @@
           <span class="br-text hide">Colaborativo</span>
         </h3>
       </div>
-    </div>
-    <div id="contact" class="sec contact">
+    </section>
+    <section id="contact" class="sec contact">
       <div class="sec-a">
         <h2>
           <span class="us-text show">GET IN TOUCH</span>
@@ -213,28 +213,31 @@
               <span class="br-text hide">Mensagem</span>
             </label>
             <textarea name="texto" id="texto" cols="30" rows="3"></textarea>
-            <button type="submit">Enviar</button>
+            <button type="submit">
+              <span class="us-text show">Send</span>
+              <span class="br-text hide">Enviar</span>
+            </button>
           </form>
         </div>
       </div>
-      <div class="sec-c">
+      <footer class="sec-c">
         <div class="socials">
+          <a href="https://bmfolio.web.app/" target="_blank" class="fa-solid fa-bookmark a"></a>
           <a href="https://www.linkedin.com/in/bruno-moraes-704728145?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="fa-brands fa-linkedin-in"></a>
           <a href="https://github.com/brunomoraesdigital" target="_blank" class="fa-brands fa-github"></a>
           <a href="https://www.tiktok.com/@bruno_moraes_?_t=8kA9IJSoBrp&_r=1" target="_blank" class="fa-brands fa-tiktok"></a>
           <a href="https://youtube.com/@meupassatempo?si=gDcbgzduv_uCqM0d" target="_blank" class="fa-brands fa-youtube"></a>
-          <a href="https://dribbble.com/bruno-moraes" target="_blank" class="fa-brands fa-dribbble"></a>
           <a href="https://x.com/brndrln?t=qnc6g_KTOTvnD43Sdmc4Sg&s=09" target="_blank" class="fa-brands fa-x-twitter"></a>
           <a href="http://be.net/bruno-moraes" target="_blank" class="fa-brands fa-behance"></a>
           <a href="https://pin.it/7vlJH70Ca" target="_blank" class="fa-brands fa-pinterest-p"></a>
         </div>
         <div class="copy">
-          <a href="https://bmfolio.web.app/" target="_blank"><span class="intervalo" id="ano-atual">Copyright © 2021 Bruno Moraes</span></a>
+          <a href="https://bmfolio.web.app/" target="_blank"><span class="intervalo a" id="ano-atual">Copyright © 2021 Bruno Moraes</span></a>
         </div>
-      </div>
-    </div>
+      </footer>
+    </section>
     <div class="ops">Ops...!</div>
-  </div>
+  </main>
   <script src="js/engine.js" defer></script>
 </body>
 

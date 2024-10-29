@@ -240,12 +240,9 @@
     overflow: hidden;*/
   }
   
-
   .navigation>* {
     /*pointer-events: auto;*/
   }
-  
-
 
   .nav-list,
   .nav-close {
@@ -373,13 +370,12 @@
 .socials .fa-youtube:hover { color: #bb0000; position: relative; display: flex; align-items: center; justify-content: center;}
 .socials .fa-youtube:hover::before {z-index: 2;}
 .socials .fa-youtube:hover::after {content: ""; position: absolute; width: 60%; height:60%; border-radius: 50%; background-color: white;}
-.socials .fa-dribbble:hover {color: #ea4c89; position: relative; display: flex; align-items: center; justify-content: center;}
-.socials .fa-dribbble:hover::before {z-index: 2;}
-.socials .fa-dribbble:hover::after {content: ""; position: absolute; width: 80%; height:80%; border-radius: 50%; background-color: lightpink;}
 .socials .fa-x-twitter:hover {color: #55ACEE;}
 .socials .fa-behance:hover {color: #0057ff;}
 .socials .fa-pinterest-p:hover {color: #bb0000;}
 
+.socials .a:hover {color: gold;}
+.a:hover {color: gold; font-weight: 700;}
 
 button {
   background-color: #808079;
